@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'accathon';
+  isSideBarOpen = false;
+  onToggleAppMenu(ev: MouseEvent) {
+    this.isSideBarOpen = !this.isSideBarOpen;
+  }
 }
